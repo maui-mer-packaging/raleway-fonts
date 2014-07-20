@@ -1,0 +1,26 @@
+Name         : raleway-fonts
+Version      : 3.0
+Release      : 1
+Group        : System/Base
+License      : OFL
+Summary      : An elegant sans-serif typeface
+Description  : |
+  Raleway is an elegant sans-serif typeface, designed in a single thin weight.
+  It is a display face that features both old style and lining numerals,
+  standard and discretionary ligatures, a pretty complete set of diacritics,
+  as well as a stylistic alternate inspired by more geometric sans-serif
+  typefaces than its neo-grotesque inspired default character set.
+URL          : http://theleagueofmoveabletype.com/raleway
+SetupOptions : -q -n %{name}-%{version}/upstream
+BuildArch    : noarch
+
+Sources:
+    - "%{name}-%{version}.tar.xz"
+
+Configure: none
+Builder: none
+
+PkgBR:
+    - fontpackages-devel
+Requires:
+    - fontpackages-filesystem
